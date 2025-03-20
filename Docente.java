@@ -1,14 +1,15 @@
 import java.util.Date;
+import java.util.List;
 
 class Docente extends Persona {
-    String constitucionLaboral;
-    String[] tipo;
-    String horarioSesion;
-    
-    public Docente(String nombre, String apellido, String correo, String telefono, Date fechaNacimiento, String direccion, String documento, String nacionalidad, String genero, String constitucionLaboral, String[] tipo, String horarioSesion) {
-        super(nombre, apellido, correo, telefono, fechaNacimiento, direccion, documento, nacionalidad, genero);
-        this.constitucionLaboral = constitucionLaboral;
+    private String correoInstitucional;
+    private List<String> asignaturas;
+    private String tipo;
+    private String horarioAsesoria;
+
+    public Docente(String nombre, String correo, String codigo, String correoInstitucional, String tipo) {
+        super(nombre, correo, codigo);
+        this.correoInstitucional = correoInstitucional;
         this.tipo = tipo;
-        this.horarioSesion = horarioSesion;
     }
 }

@@ -1,14 +1,8 @@
-class Administrador {
-    Persona persona;
-    CalendarioAcademico calendario;
-    
-    public Administrador(Persona persona, CalendarioAcademico calendario) {
-        this.persona = persona;
+class Administrador extends Persona {
+    private CalendarioAcademico calendario;
+
+    public Administrador(String nombre, String correo, String codigo, CalendarioAcademico calendario) {
+        super(nombre, correo, codigo);
         this.calendario = calendario;
     }
-    
-    public void registrarUsuario(Persona persona) {}
-    public void actualizarInformacion(Persona persona) {}
-    public void eliminarUsuario(Persona persona) {}
-    public void asignarPrivilegios(Persona persona) {}
 }
