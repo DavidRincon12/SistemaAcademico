@@ -14,6 +14,26 @@ class Persona {
         return nombre;
     }
 
+    public Persona(String nombre, String contraseña, Date fechaRegistro, String tipoDocumento, String numeroDocumento,
+            String direccion, String telefono, String correo, Date fechaNacimiento, String estadoCivil,
+            String nacionalidad, String datosProfesionales, String genero, String codigo, Rol rol) {
+        this.nombre = nombre;
+        this.contraseña = contraseña;
+        this.fechaRegistro = fechaRegistro;
+        this.tipoDocumento = tipoDocumento;
+        this.numeroDocumento = numeroDocumento;
+        this.direccion = direccion;
+        this.telefono = telefono;
+        this.correo = correo;
+        this.fechaNacimiento = fechaNacimiento;
+        this.estadoCivil = estadoCivil;
+        this.nacionalidad = nacionalidad;
+        this.datosProfesionales = datosProfesionales;
+        this.genero = genero;
+        this.codigo = codigo;
+        this.rol = rol;
+    }
+
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }

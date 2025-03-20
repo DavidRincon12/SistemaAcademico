@@ -9,6 +9,32 @@ class Estudiante extends Persona {
         return fechaInscripcion;
     }
 
+    public Estudiante(String nombre, String contraseña, Date fechaRegistro, String tipoDocumento,
+            String numeroDocumento, String direccion, String telefono, String correo, Date fechaNacimiento,
+            String estadoCivil, String nacionalidad, String datosProfesionales, String genero, String codigo, Rol rol,
+            Date fechaInscripcion, String programa, String estado, List<String> becas, String correoEstudiantil,
+            short creditosAprobados) {
+        super(nombre, contraseña, fechaRegistro, tipoDocumento, numeroDocumento, direccion, telefono, correo,
+                fechaNacimiento, estadoCivil, nacionalidad, datosProfesionales, genero, codigo, rol);
+        this.fechaInscripcion = fechaInscripcion;
+        this.programa = programa;
+        this.estado = estado;
+        this.becas = becas;
+        this.correoEstudiantil = correoEstudiantil;
+        this.creditosAprobados = creditosAprobados;
+    }
+
+    public Estudiante(String nombre, String correo, String codigo, Date fechaInscripcion, String programa,
+            String estado, List<String> becas, String correoEstudiantil, short creditosAprobados) {
+        super(nombre, correo, codigo);
+        this.fechaInscripcion = fechaInscripcion;
+        this.programa = programa;
+        this.estado = estado;
+        this.becas = becas;
+        this.correoEstudiantil = correoEstudiantil;
+        this.creditosAprobados = creditosAprobados;
+    }
+
     public void setFechaInscripcion(Date fechaInscripcion) {
         this.fechaInscripcion = fechaInscripcion;
     }

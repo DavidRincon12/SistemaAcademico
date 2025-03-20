@@ -1,15 +1,30 @@
+import java.util.Date;
 import java.util.List;
 
 class Docente extends Persona {
     private String correoInstitucional;
-    private List<String> asignaturas;
     private String tipo;
     private String horarioAsesoria;
 
-    public Docente(String nombre, String correo, String codigo, String correoInstitucional, String tipo) {
+
+
+    public Docente(String nombre, String contraseña, Date fechaRegistro, String tipoDocumento, String numeroDocumento,
+            String direccion, String telefono, String correo, Date fechaNacimiento, String estadoCivil,
+            String nacionalidad, String datosProfesionales, String genero, String codigo, Rol rol,
+            String correoInstitucional, String tipo, String horarioAsesoria) {
+        super(nombre, contraseña, fechaRegistro, tipoDocumento, numeroDocumento, direccion, telefono, correo,
+                fechaNacimiento, estadoCivil, nacionalidad, datosProfesionales, genero, codigo, rol);
+        this.correoInstitucional = correoInstitucional;
+        this.tipo = tipo;
+        this.horarioAsesoria = horarioAsesoria;
+    }
+
+    public Docente(String nombre, String correo, String codigo, String correoInstitucional, String tipo,
+            String horarioAsesoria) {
         super(nombre, correo, codigo);
         this.correoInstitucional = correoInstitucional;
         this.tipo = tipo;
+        this.horarioAsesoria = horarioAsesoria;
     }
 
     public String getCorreoInstitucional() {
@@ -18,14 +33,6 @@ class Docente extends Persona {
 
     public void setCorreoInstitucional(String correoInstitucional) {
         this.correoInstitucional = correoInstitucional;
-    }
-
-    public List<String> getAsignaturas() {
-        return asignaturas;
-    }
-
-    public void setAsignaturas(List<String> asignaturas) {
-        this.asignaturas = asignaturas;
     }
 
     public String getTipo() {
