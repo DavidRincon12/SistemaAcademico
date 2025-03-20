@@ -1,3 +1,5 @@
+import java.util.Date;
+
 class Mensaje {
     String contenido;
     Date fecha;

@@ -1,3 +1,5 @@
+import java.util.Date;
+
 class Asistencia {
     Estudiante estudiante;
     String clase;

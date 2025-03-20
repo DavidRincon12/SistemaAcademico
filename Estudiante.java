@@ -1,3 +1,5 @@
+import java.util.Date;
+
 class Estudiante extends Persona {
     Date fechaIngreso;
     String programa;

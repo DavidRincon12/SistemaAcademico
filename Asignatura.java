@@ -1,3 +1,7 @@
+
+import java.util.List;
+import java.util.ArrayList;
+
 class Asignatura {
     String nombre;
     Docente docente;

@@ -1,3 +1,5 @@
+import java.util.Date;
+
 class ReservaRecurso {
     Date fechaInicio;
     Date fechaFin;

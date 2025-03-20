@@ -1,3 +1,5 @@
+import java.util.Date;
+
 class Docente extends Persona {
     String constitucionLaboral;
     String[] tipo;

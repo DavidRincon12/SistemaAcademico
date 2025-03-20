@@ -1,3 +1,7 @@
+import java.util.Map;
+import java.util.HashMap;
+import java.util.Date;
+
 class CalendarioAcademico {
     String nombrePeriodo;
     Date fechaInicioPeriodo;

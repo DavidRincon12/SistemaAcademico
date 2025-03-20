@@ -1,3 +1,5 @@
+import java.util.Date;
+
 class Comentario {
     String contenido;
     Date fecha;
