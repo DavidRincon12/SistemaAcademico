@@ -1,5 +1,4 @@
 import java.util.Date;
-import java.util.List;
 
 class Docente extends Persona {
     private String correoInstitucional;
