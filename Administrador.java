@@ -5,4 +5,12 @@ class Administrador extends Persona {
         super(nombre, correo, codigo);
         this.calendario = calendario;
     }
+
+    public CalendarioAcademico getCalendario() {
+        return calendario;
+    }
+
+    public void setCalendario(CalendarioAcademico calendario) {
+        this.calendario = calendario;
+    }
 }
