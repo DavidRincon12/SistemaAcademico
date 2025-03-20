@@ -1,5 +1,3 @@
-import java.util.Date;
-
 class PersonalAdministrativo extends Persona {
     private String cargo;
 
