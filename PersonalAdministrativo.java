@@ -7,4 +7,12 @@ class PersonalAdministrativo extends Persona {
         super(nombre, correo, codigo);
         this.cargo = cargo;
     }
+
+    public String getCargo() {
+        return cargo;
+    }
+
+    public void setCargo(String cargo) {
+        this.cargo = cargo;
+    }
 }
