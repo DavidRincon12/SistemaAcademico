@@ -1,29 +1,45 @@
-import java.util.Map;
-import java.util.HashMap;
-import java.util.Date;
 
-class CalendarioAcademico {
-    String nombrePeriodo;
-    Date fechaInicioPeriodo;
-    Map<String, Date> fechasImportantes;
-    
-    public CalendarioAcademico(String nombrePeriodo, Date fechaInicioPeriodo) {
-        this.nombrePeriodo = nombrePeriodo;
-        this.fechaInicioPeriodo = fechaInicioPeriodo;
-        this.fechasImportantes = new HashMap<>();
+import java.io.*;
+import java.util.*;
+
+/**
+ * 
+ */
+public class CalendarioAcademico {
+
+    /**
+     * Default constructor
+     */
+    public CalendarioAcademico() {
     }
-    
-    public void agregarFechaImportante(String evento, Date fecha) {
-        fechasImportantes.put(evento, fecha);
+
+    /**
+     * 
+     */
+    private String nombrePeriodo;
+
+    /**
+     * 
+     */
+    private Date fechaInicio;
+
+    /**
+     * 
+     */
+    private Date fechaFin;
+
+    /**
+     * 
+     */
+    public void agregarEvento() {
+        // TODO implement here
     }
-    
-    public void eliminarFechaImportante(String evento) {
-        fechasImportantes.remove(evento);
-    }
-    
+
+    /**
+     * 
+     */
     public void listarFechasImportantes() {
-        for (Map.Entry<String, Date> entry : fechasImportantes.entrySet()) {
-            System.out.println(entry.getKey() + " : " + entry.getValue());
-        }
+        // TODO implement here
     }
+
 }

@@ -1,27 +1,41 @@
-import java.util.Date;
 
-class Horario {
-    String materia;
-    Docente docente;
-    String dia;
-    Date horaInicio;
-    Date horaFin;
-    
-    public Horario(String materia, Docente docente, String dia, Date horaInicio, Date horaFin) {
-        this.materia = materia;
-        this.docente = docente;
-        this.dia = dia;
-        this.horaInicio = horaInicio;
-        this.horaFin = horaFin;
+import java.io.*;
+import java.util.*;
+
+/**
+ * 
+ */
+public class Horario {
+
+    /**
+     * Default constructor
+     */
+    public Horario() {
     }
-    
-    public void asignarHorario(String dia, Date horaInicio, Date horaFin) {
-        this.dia = dia;
-        this.horaInicio = horaInicio;
-        this.horaFin = horaFin;
-    }
-    
-    public void modificarHorario(String dia, Date horaInicio, Date horaFin) {
-        asignarHorario(dia, horaInicio, horaFin);
-    }
+
+    /**
+     * 
+     */
+    public Materia materia;
+
+    /**
+     * 
+     */
+    private Docente docente;
+
+    /**
+     * 
+     */
+    private String dia;
+
+    /**
+     * 
+     */
+    private Date horaInicio;
+
+    /**
+     * 
+     */
+    private Date horaFin;
+
 }

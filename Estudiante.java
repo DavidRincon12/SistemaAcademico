@@ -1,91 +1,83 @@
-import java.util.List;
-import java.util.Date;
 
-class Estudiante extends Persona {
+import java.io.*;
+import java.util.*;
+
+/**
+ * 
+ */
+public class Estudiante {
+
+    /**
+     * Default constructor
+     */
+    public Estudiante() {
+    }
+
+    /**
+     * 
+     */
     private Date fechaInscripcion;
-    private String programa;
+
+    /**
+     * 
+     */
+    private Programa programa;
+
+    /**
+     * 
+     */
     private String estado;
-    public Date getFechaInscripcion() {
-        return fechaInscripcion;
-    }
 
-    public Estudiante(String nombre, String contraseña, Date fechaRegistro, String tipoDocumento,
-            String numeroDocumento, String direccion, String telefono, String correo, Date fechaNacimiento,
-            String estadoCivil, String nacionalidad, String datosProfesionales, String genero, String codigo, Rol rol,
-            Date fechaInscripcion, String programa, String estado, List<String> becas, String correoEstudiantil,
-            short creditosAprobados) {
-        super(nombre, contraseña, fechaRegistro, tipoDocumento, numeroDocumento, direccion, telefono, correo,
-                fechaNacimiento, estadoCivil, nacionalidad, datosProfesionales, genero, codigo, rol);
-        this.fechaInscripcion = fechaInscripcion;
-        this.programa = programa;
-        this.estado = estado;
-        this.becas = becas;
-        this.correoEstudiantil = correoEstudiantil;
-        this.creditosAprobados = creditosAprobados;
-    }
+    /**
+     * 
+     */
+    private String becas;
 
-    public Estudiante(String nombre, String correo, String codigo, Date fechaInscripcion, String programa,
-            String estado, List<String> becas, String correoEstudiantil, short creditosAprobados) {
-        super(nombre, correo, codigo);
-        this.fechaInscripcion = fechaInscripcion;
-        this.programa = programa;
-        this.estado = estado;
-        this.becas = becas;
-        this.correoEstudiantil = correoEstudiantil;
-        this.creditosAprobados = creditosAprobados;
-    }
-
-    public void setFechaInscripcion(Date fechaInscripcion) {
-        this.fechaInscripcion = fechaInscripcion;
-    }
-
-    public String getPrograma() {
-        return programa;
-    }
-
-    public void setPrograma(String programa) {
-        this.programa = programa;
-    }
-
-    public String getEstado() {
-        return estado;
-    }
-
-    public void setEstado(String estado) {
-        this.estado = estado;
-    }
-
-    public List<String> getBecas() {
-        return becas;
-    }
-
-    public void setBecas(List<String> becas) {
-        this.becas = becas;
-    }
-
-    public String getCorreoEstudiantil() {
-        return correoEstudiantil;
-    }
-
-    public void setCorreoEstudiantil(String correoEstudiantil) {
-        this.correoEstudiantil = correoEstudiantil;
-    }
-
-    public short getCreditosAprobados() {
-        return creditosAprobados;
-    }
-
-    public void setCreditosAprobados(short creditosAprobados) {
-        this.creditosAprobados = creditosAprobados;
-    }
-
-    private List<String> becas;
+    /**
+     * 
+     */
     private String correoEstudiantil;
-    private short creditosAprobados;
 
-    public Estudiante(String nombre, String correo, String codigo, Date fechaInscripcion, String programa) {
-        super(nombre, correo, codigo);
-        this.fechaInscripcion = fechaInscripcion;
-        this.programa = programa;
+    /**
+     * 
+     */
+    private Short creditosAprobados;
+
+    /**
+     * 
+     */
+    private Persona persona;
+
+    /**
+     * @param m 
+     * @return
+     */
+    public boolean matricular(Materia m) {
+        // TODO implement here
+        return false;
     }
+
+    /**
+     * @return
+     */
+    public short calcularCreditos() {
+        // TODO implement here
+        return 0;
+    }
+
+    /**
+     * @return
+     */
+    public short calcularSemestre() {
+        // TODO implement here
+        return 0;
+    }
+
+    /**
+     * 
+     */
+    public void solicitarBeca() {
+        // TODO implement here
+    }
+
 }

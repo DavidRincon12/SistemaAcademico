@@ -5,29 +5,33 @@ import java.util.*;
 /**
  * 
  */
-public class Administrador {
+public class Matricula {
 
     /**
      * Default constructor
      */
-    public Administrador() {
+    public Matricula() {
     }
 
     /**
      * 
      */
-    private Persona persona;
+    private Estudiante estudiante;
 
     /**
      * 
      */
-    private CalendarioAcademico calendario;
+    private Clase clase;
 
     /**
-     * @param p 
+     * 
+     */
+    private Date fechaMatricula;
+
+    /**
      * @return
      */
-    public boolean registrarUsuario(Persona p) {
+    public boolean validarCupo() {
         // TODO implement here
         return false;
     }
@@ -35,27 +39,24 @@ public class Administrador {
     /**
      * @return
      */
-    public boolean actualizarInformacion() {
+    public boolean validarHorario() {
         // TODO implement here
         return false;
     }
 
     /**
-     * @param p 
      * @return
      */
-    public boolean eliminarUsuario(Persona p) {
+    public boolean validarCreditos() {
         // TODO implement here
         return false;
     }
 
     /**
-     * @param p 
-     * @return
+     * 
      */
-    public boolean asignarPrivilegios(Persona p) {
+    public void registrarMatricula() {
         // TODO implement here
-        return false;
     }
 
 }

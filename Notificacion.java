@@ -1,37 +1,50 @@
-import java.util.Date;
 
-class Notificacion {
-    Date fecha;
-    String contenido;
-    Persona destinatario;
-    
-    public Notificacion(Date fecha, String contenido, Persona destinatario) {
-        this.fecha = fecha;
-        this.contenido = contenido;
-        this.destinatario = destinatario;
+import java.io.*;
+import java.util.*;
+
+/**
+ * 
+ */
+public class Notificacion {
+
+    /**
+     * Default constructor
+     */
+    public Notificacion() {
     }
 
-    public Date getFecha() {
-        return fecha;
+    /**
+     * 
+     */
+    private Date fechaEnvio;
+
+    /**
+     * 
+     */
+    private String contenido;
+
+    /**
+     * 
+     */
+    private Persona destinatario;
+
+    /**
+     * 
+     */
+    private Persona remitente;
+
+    /**
+     * 
+     */
+    public void marcarComoLeido() {
+        // TODO implement here
     }
 
-    public void setFecha(Date fecha) {
-        this.fecha = fecha;
+    /**
+     * 
+     */
+    public void eliminarNotificacion() {
+        // TODO implement here
     }
 
-    public String getContenido() {
-        return contenido;
-    }
-
-    public void setContenido(String contenido) {
-        this.contenido = contenido;
-    }
-
-    public Persona getDestinatario() {
-        return destinatario;
-    }
-
-    public void setDestinatario(Persona destinatario) {
-        this.destinatario = destinatario;
-    }
 }

@@ -5,34 +5,35 @@ import java.util.*;
 /**
  * 
  */
-public class Chat {
+public class Semestre {
 
     /**
      * Default constructor
      */
-    public Chat() {
+    public Semestre() {
     }
 
     /**
      * 
      */
-    private Date fechaCreacion;
+    private String nombre;
 
     /**
      * 
      */
-    private Persona participante1;
+    public Date efchaInicio;
 
     /**
      * 
      */
-    private Persona participante2;
+    private Date fechaFin;
 
     /**
-     * @param m
+     * @return
      */
-    public void agregarMensaje(Mensaje m) {
+    public boolean validarPeriodoActual() {
         // TODO implement here
+        return false;
     }
 
 }

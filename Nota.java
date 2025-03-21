@@ -1,35 +1,36 @@
-class Nota {
-    Asignatura asignatura;
-    float calificacion;
-    String tipo;
-    
-    public Nota(Asignatura asignatura, float calificacion, String tipo) {
-        this.asignatura = asignatura;
-        this.calificacion = calificacion;
-        this.tipo = tipo;
+
+import java.io.*;
+import java.util.*;
+
+/**
+ * 
+ */
+public class Nota {
+
+    /**
+     * Default constructor
+     */
+    public Nota() {
     }
 
-    public Asignatura getAsignatura() {
-        return asignatura;
-    }
+    /**
+     * 
+     */
+    private Asignatura asignatura;
 
-    public void setAsignatura(Asignatura asignatura) {
-        this.asignatura = asignatura;
-    }
+    /**
+     * 
+     */
+    private Estudiante estudiante;
 
-    public float getCalificacion() {
-        return calificacion;
-    }
+    /**
+     * 
+     */
+    private float calificacion;
 
-    public void setCalificacion(float calificacion) {
-        this.calificacion = calificacion;
-    }
+    /**
+     * 
+     */
+    private String tipo;
 
-    public String getTipo() {
-        return tipo;
-    }
-
-    public void setTipo(String tipo) {
-        this.tipo = tipo;
-    }
 }

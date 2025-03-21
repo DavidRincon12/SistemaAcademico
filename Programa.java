@@ -1,28 +1,60 @@
-import java.util.List;
-import java.util.ArrayList;
 
-class Programa {
-    String nombre;
-    List<Materia> materias;
-    
-    public Programa(String nombre) {
-        this.nombre = nombre;
-        this.materias = new ArrayList<>();
+import java.io.*;
+import java.util.*;
+
+/**
+ * 
+ */
+public class Programa {
+
+    /**
+     * Default constructor
+     */
+    public Programa() {
     }
 
-    public String getNombre() {
-        return nombre;
+    /**
+     * 
+     */
+    private String nombre;
+
+    /**
+     * 
+     */
+    private String codigo;
+
+    /**
+     * 
+     */
+    private String duracion;
+
+    /**
+     * 
+     */
+    private Docente director;
+
+    /**
+     * 
+     */
+    private String registroSnies;
+
+    /**
+     * 
+     */
+    private Facultad facultad;
+
+    /**
+     * 
+     */
+    public void crearMateria() {
+        // TODO implement here
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    /**
+     * 
+     */
+    public void eliminarMateria() {
+        // TODO implement here
     }
 
-    public List<Materia> getMaterias() {
-        return materias;
-    }
-
-    public void setMaterias(List<Materia> materias) {
-        this.materias = materias;
-    }
 }

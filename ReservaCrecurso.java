@@ -5,40 +5,40 @@ import java.util.*;
 /**
  * 
  */
-public class Facultad {
+public class ReservaCrecurso {
 
     /**
      * Default constructor
      */
-    public Facultad() {
+    public ReservaCrecurso() {
     }
 
     /**
      * 
      */
-    private String nombre;
+    private Date fechaInicio;
 
     /**
      * 
      */
-    private String correo;
+    private Date fechaFin;
 
     /**
      * 
      */
-    private Docente decano;
+    private String estado;
 
     /**
      * 
      */
-    public void crearPrograma() {
+    public void aprovarReserva() {
         // TODO implement here
     }
 
     /**
      * 
      */
-    public void eliminarPrograma() {
+    public void extenderReserva() {
         // TODO implement here
     }
 

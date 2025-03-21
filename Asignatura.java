@@ -1,23 +1,36 @@
 
-import java.util.List;
-import java.util.ArrayList;
+import java.io.*;
+import java.util.*;
 
-class Asignatura {
-    String nombre;
-    Docente docente;
-    List<Estudiante> estudiantes;
-    
-    public Asignatura(String nombre, Docente docente) {
-        this.nombre = nombre;
-        this.docente = docente;
-        this.estudiantes = new ArrayList<>();
+/**
+ * 
+ */
+public class Asignatura {
+
+    /**
+     * Default constructor
+     */
+    public Asignatura() {
     }
-    
-    public void asignarProfesor(Docente profesor) {
-        this.docente = profesor;
-    }
-    
-    public void eliminarProfesor() {
-        this.docente = null;
-    }
+
+    /**
+     * 
+     */
+    private String nombre;
+
+    /**
+     * 
+     */
+    private Docente docente;
+
+    /**
+     * 
+     */
+    private Materia materia;
+
+    /**
+     * 
+     */
+    private Estudiante estudiante;
+
 }

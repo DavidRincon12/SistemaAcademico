@@ -1,35 +1,75 @@
-class Materia {
-    String nombre;
-    String codigo;
-    int creditos;
-    
-    public Materia(String nombre, String codigo, int creditos) {
-        this.nombre = nombre;
-        this.codigo = codigo;
-        this.creditos = creditos;
+
+import java.io.*;
+import java.util.*;
+
+/**
+ * 
+ */
+public class Materia {
+
+    /**
+     * Default constructor
+     */
+    public Materia() {
     }
 
-    public String getNombre() {
-        return nombre;
+    /**
+     * 
+     */
+    private String nombre;
+
+    /**
+     * 
+     */
+    private String estado;
+
+    /**
+     * 
+     */
+    private Semestre semestre;
+
+    /**
+     * 
+     */
+    private Programa programa;
+
+    /**
+     * 
+     */
+    private boolean electiva;
+
+    /**
+     * 
+     */
+    private Materia prerrequisito;
+
+    /**
+     * 
+     */
+    private String contenido;
+
+    /**
+     * 
+     */
+    private String objetivos;
+
+    /**
+     * 
+     */
+    private String competencias;
+
+    /**
+     * 
+     */
+    public void añadirAsignatura() {
+        // TODO implement here
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    /**
+     * 
+     */
+    public void eliminarAsignatura() {
+        // TODO implement here
     }
 
-    public String getCodigo() {
-        return codigo;
-    }
-
-    public void setCodigo(String codigo) {
-        this.codigo = codigo;
-    }
-
-    public int getCreditos() {
-        return creditos;
-    }
-
-    public void setCreditos(int creditos) {
-        this.creditos = creditos;
-    }
 }

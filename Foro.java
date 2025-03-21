@@ -1,38 +1,50 @@
-import java.util.ArrayList;
-import java.util.List;
 
-class Foro {
-    String tema;
-    String descripcion;
-    List<Comentario> comentarios;
-    
-    public Foro(String tema, String descripcion) {
-        this.tema = tema;
-        this.descripcion = descripcion;
-        this.comentarios = new ArrayList<>();
+import java.io.*;
+import java.util.*;
+
+/**
+ * 
+ */
+public class Foro {
+
+    /**
+     * Default constructor
+     */
+    public Foro() {
     }
 
-    public String getTema() {
-        return tema;
+    /**
+     * 
+     */
+    private String tema;
+
+    /**
+     * 
+     */
+    private String descripcion;
+
+    /**
+     * 
+     */
+    private Date fechaCreacion;
+
+    /**
+     * 
+     */
+    private Persona autor;
+
+    /**
+     * @param c
+     */
+    public void agregarComentario(Comentario c) {
+        // TODO implement here
     }
 
-    public void setTema(String tema) {
-        this.tema = tema;
+    /**
+     * @param c
+     */
+    public void eliminarComentario(Comentario c) {
+        // TODO implement here
     }
 
-    public String getDescripcion() {
-        return descripcion;
-    }
-
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
-    }
-
-    public List<Comentario> getComentarios() {
-        return comentarios;
-    }
-
-    public void setComentarios(List<Comentario> comentarios) {
-        this.comentarios = comentarios;
-    }
 }

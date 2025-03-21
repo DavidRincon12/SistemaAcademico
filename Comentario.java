@@ -1,13 +1,50 @@
-import java.util.Date;
 
-class Comentario {
-    String contenido;
-    Date fecha;
-    Persona autor;
-    
-    public Comentario(String contenido, Date fecha, Persona autor) {
-        this.contenido = contenido;
-        this.fecha = fecha;
-        this.autor = autor;
+import java.io.*;
+import java.util.*;
+
+/**
+ * 
+ */
+public class Comentario {
+
+    /**
+     * Default constructor
+     */
+    public Comentario() {
     }
+
+    /**
+     * 
+     */
+    private String contenido;
+
+    /**
+     * 
+     */
+    private Date fechaCreacion;
+
+    /**
+     * 
+     */
+    private Persona emisor;
+
+    /**
+     * 
+     */
+    private Foro foro;
+
+    /**
+     * @param c
+     */
+    public void editarComentario(Comentario c) {
+        // TODO implement here
+    }
+
+    /**
+     * @param c
+     */
+    public void eliminarComentario(Comentario c) {
+        // TODO implement here
+    }
+
 }

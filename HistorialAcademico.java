@@ -1,28 +1,50 @@
-import java.util.List;
-import java.util.ArrayList;
 
-class HistorialAcademico {
-    Estudiante estudiante;
-    List<Nota> notas;
-    
-    public HistorialAcademico(Estudiante estudiante) {
-        this.estudiante = estudiante;
-        this.notas = new ArrayList<>();
+import java.io.*;
+import java.util.*;
+
+/**
+ * 
+ */
+public class HistorialAcademico {
+
+    /**
+     * Default constructor
+     */
+    public HistorialAcademico() {
     }
 
-    public Estudiante getEstudiante() {
-        return estudiante;
+    /**
+     * 
+     */
+    private Estudiante estudiante;
+
+    /**
+     * 
+     */
+    private Materia materiaAprobadas;
+
+    /**
+     * 
+     */
+    private Materia materiaProceso;
+
+    /**
+     * 
+     */
+    private float promedioPonderado;
+
+    /**
+     * 
+     */
+    public void calcularPonderado() {
+        // TODO implement here
     }
 
-    public void setEstudiante(Estudiante estudiante) {
-        this.estudiante = estudiante;
+    /**
+     * 
+     */
+    public void Operation1() {
+        // TODO implement here
     }
 
-    public List<Nota> getNotas() {
-        return notas;
-    }
-
-    public void setNotas(List<Nota> notas) {
-        this.notas = notas;
-    }
 }

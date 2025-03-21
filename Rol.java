@@ -1,28 +1,38 @@
-import java.util.ArrayList;
-import java.util.List;
 
-class Rol {
+import java.io.*;
+import java.util.*;
+
+/**
+ * 
+ */
+public class Rol {
+
+    /**
+     * Default constructor
+     */
+    public Rol() {
+    }
+
+    /**
+     * 
+     */
     private String nombre;
-    private List<String> permisos;
 
-    public Rol(String nombre) {
-        this.nombre = nombre;
-        this.permisos = new ArrayList<>();
+    /**
+     * 
+     */
+    private String permisos;
+
+    /**
+     * 
+     */
+    private Persona tipo;
+
+    /**
+     * 
+     */
+    public void revocarPermiso() {
+        // TODO implement here
     }
 
-    public String getNombre() {
-        return nombre;
-    }
-
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-
-    public List<String> getPermisos() {
-        return permisos;
-    }
-
-    public void setPermisos(List<String> permisos) {
-        this.permisos = permisos;
-    }
 }

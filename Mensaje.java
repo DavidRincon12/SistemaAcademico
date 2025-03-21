@@ -1,15 +1,72 @@
-import java.util.Date;
 
-class Mensaje {
-    String contenido;
-    Date fecha;
-    Persona remitente;
-    Persona destinatario;
-    
-    public Mensaje(String contenido, Date fecha, Persona remitente, Persona destinatario) {
-        this.contenido = contenido;
-        this.fecha = fecha;
-        this.remitente = remitente;
-        this.destinatario = destinatario;
+import java.io.*;
+import java.util.*;
+
+/**
+ * 
+ */
+public class Mensaje {
+
+    /**
+     * Default constructor
+     */
+    public Mensaje() {
     }
+
+    /**
+     * 
+     */
+    private String contenido;
+
+    /**
+     * 
+     */
+    private Persona emisor;
+
+    /**
+     * 
+     */
+    private Persona destinatario;
+
+    /**
+     * 
+     */
+    private Date fechaEnvio;
+
+    /**
+     * 
+     */
+    private Chat chat;
+
+    /**
+     * 
+     */
+    private boolean editado;
+
+    /**
+     * 
+     */
+    private String estado;
+
+    /**
+     * 
+     */
+    public void editarMensaje() {
+        // TODO implement here
+    }
+
+    /**
+     * 
+     */
+    public void eliminarMensaje() {
+        // TODO implement here
+    }
+
+    /**
+     * 
+     */
+    public void cambiarEstado() {
+        // TODO implement here
+    }
+
 }
